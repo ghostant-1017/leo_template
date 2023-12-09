@@ -7,7 +7,7 @@ program leo_template.aleo {
         amount: u128,
     }
 
-    const contract_owner: address = aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc;
+    const contract_owner: address = aleo1axv6c4wuah0vaf9mccu2xcv72eup8ncd35v2j0mt3mnkwx04dg9s4r8888;
 
     transition mint_private(receiver: address, amount: u128) -> token {
         assert(self.caller == contract_owner);
