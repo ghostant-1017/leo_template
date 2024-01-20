@@ -65,3 +65,29 @@ You can see this grouping by looking first at a block - https://explorer.hamp.ap
 
 block —> transactions —> transitions —> records
 
+
+
+## What makes up a Record
+
+A record will look like:
+
+```
+record1qyqsqy4m2af2k4ncfdz9epcn0rr284z2tdqt67dcpya5cdk84w6yv7q9qyxx66trwfhkxun9v35hguerqqpqzq9wtmyxdukwnwxvqjt9x8pz8gta40g5v8lfkfgpl8k5tlgzg0elqrwt7earvar8zlza6twwzpzacymsy2ms083k0plr0nsc4slu9xwq2yzgrhj
+```
+
+it can be decrypted with your **ViewKey **if it belongs to you
+
+```
+{
+  owner: aleo1ej97m92u995kpzn8m0zms65uwasq8w95r6pnepdpnh89c7qug5pqyyykr9.private,
+  microcredits: 93300000000u64.private,
+  _nonce: 2537482171121567559953927872334058167419291196003242761090252325051232141276group.public
+}
+```
+
+This contains an owner and microcredits, which is the smallest division of an Aleo credit.
+
+https://developer.aleo.org/concepts/transaction_fees/#aleo-credits-denomination-table
+
+The `_nonce` is just a unique identifier for this record, so the number has no significant meaning.
+
