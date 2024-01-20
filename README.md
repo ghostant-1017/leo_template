@@ -15,3 +15,36 @@ Make sure you have the following software installed on your local machine:
 6. [Install VSCode](https://code.visualstudio.com/download)
 
 
+
+## Working with snarkos and the leo CLI
+
+`snarkos` is the command used to interact with our Aleo node, so it will be used for things like deploying.
+
+```
+snarkos --help
+```
+
+`leo` is probably the command you will use more often, as it is the command used to interact with our application, or do basic things like create Leo wallets.
+
+```
+leo --help
+```
+
+There is some overlap between tools, so for example, you can create a wallet with both. I’ll generally prefer to use `leo` when possible. Let’s go through an example of creating a wallet next.
+
+### Create a  Wallet
+
+You will need a wallet to deploy your program. You can create a wallet by running the following command:
+
+`leo account new`
+
+The structure will look something like:
+
+```
+Private Key  APrivateKey1zkp57ZaLSVAQjEqfAMZ1QWbi7db3BBCmPkG6Q6fp4qryD6p
+	 View Key  AViewKey1mMuL6pMbdQdK3Tqmw1og632Vz2Y9ZSJ5ctF48PhjK64r
+		Address  aleo1yt7t660fx2675gapa8tr5k99cgl7klwsz3gtd9qzcfh0xklwxuqsauh8v6
+```
+
+Be sure to save the Address, View and Private Keys of this wallet, you will need them later.
+
