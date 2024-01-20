@@ -91,3 +91,59 @@ https://developer.aleo.org/concepts/transaction_fees/#aleo-credits-denomination-
 
 The `_nonce` is just a unique identifier for this record, so the number has no significant meaning.
 
+
+
+## Creating a Project
+
+Run the following command to initialize a Leo project.
+
+```
+leo new hello
+```
+
+Let's take a look at the structure of the project.
+
+Code is written in `main.leo`.
+
+```
+program hello.aleo {
+    transition main(public a: u32, b: u32) -> u32 {
+        let c: u32 = a + b;
+        return c;
+    }
+}
+```
+
+This describes a program with a **Program ID** called `hello`. Then, we have a `transition`. parameters of type `u32` (integer) and a return of `u32`. This just adds up the values in C and returns C.
+
+To see this execute:
+
+```
+leo run main 10u32 5u32
+```
+
+this should give 15u32
+
+
+
+## Example zkproof -
+
+To quickly see zk proofs in action, while kinda silly, this will prove that B is an even number.
+
+```
+program hello.aleo {
+    transition main(a: u32, b: u32) -> u32 {
+        assert_eq(b.rem(2u32), 0u32);
+        let c: u32 = a + b;
+        return c;
+    }
+}
+```
+
+```
+leo execute main 3u32 5u32
+```
+
+When people say that the inputs remain private, it is specifically referring the arguments to this transition function. So the value 5 is not exposed.
+
+This is a basic example, but illustrates how a ZKP will work.
