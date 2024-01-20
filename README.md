@@ -75,7 +75,7 @@ A record will look like:
 record1qyqsqy4m2af2k4ncfdz9epcn0rr284z2tdqt67dcpya5cdk84w6yv7q9qyxx66trwfhkxun9v35hguerqqpqzq9wtmyxdukwnwxvqjt9x8pz8gta40g5v8lfkfgpl8k5tlgzg0elqrwt7earvar8zlza6twwzpzacymsy2ms083k0plr0nsc4slu9xwq2yzgrhj
 ```
 
-it can be decrypted with your **ViewKey **if it belongs to you
+it can be decrypted with your viewkey if it belongs to you.
 
 ```
 {
@@ -126,7 +126,7 @@ this should give 15u32
 
 
 
-## Example zkproof -
+## Example zkproof
 
 To quickly see zk proofs in action, while kinda silly, this will prove that B is an even number.
 
