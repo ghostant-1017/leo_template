@@ -48,3 +48,20 @@ Address  aleo1yt7t660fx2675gapa8tr5k99cgl7klwsz3gtd9qzcfh0xklwxuqsauh8v6
 
 Be sure to save the Address, View and Private Keys of this wallet, you will need them later.
 
+
+
+## Record Model Explained
+
+Record model is similar to that of Bitcoin or the UTXO model compared to an account model.
+
+We will go over some basic vocabulary:
+
+-   A **record** is the smallest data structure for storing state. For example, we can use a record to transfer Aleo credits from one address to another privately.
+-   We then have a **transition**. If the records store state, a transition describes a change from one state to another. Through this process, records are consumed and created.
+-   A **transaction**, the term most have probably heard, is a collection of transitions that will be published on chain.
+-   Finally, a **block** is a collection of transactions allowing for a record of all state changes over time.
+
+You can see this grouping by looking first at a block - https://explorer.hamp.app/block?h=604344
+
+block —> transactions —> transitions —> records
+
