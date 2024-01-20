@@ -1,5 +1,12 @@
 program leo_template.aleo;
 
+record record1:
+    owner as address.private;
+    amount as u64.private;
+
+record record2:
+    owner as address.private;
+    amount as u64.private;
 
 
 function main:
